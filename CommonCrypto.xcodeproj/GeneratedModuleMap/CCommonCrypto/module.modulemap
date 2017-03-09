@@ -1,5 +1,0 @@
-module CCommonCrypto {
-    umbrella header "/Users/sonson/code/CommonCrypto/Sources/CCommonCrypto/include/CCommonCrypto.h"
-    link "CCommonCrypto"
-    export *
-}
