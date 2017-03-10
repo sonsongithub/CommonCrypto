@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "140189611E7240320053F98B"
+               BlueprintIdentifier = "140189951E72495F0053F98B"
                BuildableName = "CommonCrypto.framework"
-               BlueprintName = "CommonCrypto"
+               BlueprintName = "CommonCrypto-watchOS"
                ReferencedContainer = "container:CommonCrypto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "140189611E7240320053F98B"
+            BlueprintIdentifier = "140189951E72495F0053F98B"
             BuildableName = "CommonCrypto.framework"
-            BlueprintName = "CommonCrypto"
+            BlueprintName = "CommonCrypto-watchOS"
             ReferencedContainer = "container:CommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "140189611E7240320053F98B"
+            BlueprintIdentifier = "140189951E72495F0053F98B"
             BuildableName = "CommonCrypto.framework"
-            BlueprintName = "CommonCrypto"
+            BlueprintName = "CommonCrypto-watchOS"
             ReferencedContainer = "container:CommonCrypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

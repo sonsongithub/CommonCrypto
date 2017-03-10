@@ -17,10 +17,38 @@
 		1401896E1E7240650053F98B /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
 		1401896F1E7240650053F98B /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		140189701E7240650053F98B /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		1401898D1E72491B0053F98B /* appletvos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = appletvos.modulemap; sourceTree = "<group>"; };
+		1401898E1E72491B0053F98B /* appletvsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = appletvsimulator.modulemap; sourceTree = "<group>"; };
+		1401898F1E72491B0053F98B /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		140189901E72491B0053F98B /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
+		140189961E72495F0053F98B /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		140189A31E7249920053F98B /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		140189B01E724A650053F98B /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1401895E1E7240320053F98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189921E72495F0053F98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1401899F1E7249920053F98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189AC1E724A650053F98B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				140189621E7240320053F98B /* CommonCrypto.framework */,
+				140189961E72495F0053F98B /* CommonCrypto.framework */,
+				140189A31E7249920053F98B /* CommonCrypto.framework */,
+				140189B01E724A650053F98B /* CommonCrypto.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				1401896D1E7240650053F98B /* CommonCrypto.xcconfig */,
+				1401898D1E72491B0053F98B /* appletvos.modulemap */,
+				1401898E1E72491B0053F98B /* appletvsimulator.modulemap */,
+				1401898F1E72491B0053F98B /* watchos.modulemap */,
+				140189901E72491B0053F98B /* watchsimulator.modulemap */,
 				1401896E1E7240650053F98B /* iphoneos.modulemap */,
 				1401896F1E7240650053F98B /* iphonesimulator.modulemap */,
 				140189701E7240650053F98B /* macosx.modulemap */,
@@ -68,12 +103,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		140189931E72495F0053F98B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189A01E7249920053F98B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189AD1E724A650053F98B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		140189611E7240320053F98B /* CommonCrypto */ = {
+		140189611E7240320053F98B /* CommonCrypto-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1401896A1E7240320053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
+			buildConfigurationList = 1401896A1E7240320053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-iOS" */;
 			buildPhases = (
 				1401895D1E7240320053F98B /* Sources */,
 				1401895E1E7240320053F98B /* Frameworks */,
@@ -84,9 +140,63 @@
 			);
 			dependencies = (
 			);
-			name = CommonCrypto;
+			name = "CommonCrypto-iOS";
 			productName = CommonCrypto;
 			productReference = 140189621E7240320053F98B /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		140189951E72495F0053F98B /* CommonCrypto-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1401899B1E72495F0053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */;
+			buildPhases = (
+				140189911E72495F0053F98B /* Sources */,
+				140189921E72495F0053F98B /* Frameworks */,
+				140189931E72495F0053F98B /* Headers */,
+				140189941E72495F0053F98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonCrypto-watchOS";
+			productName = CommonCrypto;
+			productReference = 140189961E72495F0053F98B /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		140189A21E7249920053F98B /* CommonCrypto-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 140189A81E7249920053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-tvOS" */;
+			buildPhases = (
+				1401899E1E7249920053F98B /* Sources */,
+				1401899F1E7249920053F98B /* Frameworks */,
+				140189A01E7249920053F98B /* Headers */,
+				140189A11E7249920053F98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonCrypto-tvOS";
+			productName = CommonCrypto;
+			productReference = 140189A31E7249920053F98B /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		140189AF1E724A650053F98B /* CommonCrypto-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 140189B51E724A650053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-macOS" */;
+			buildPhases = (
+				140189AB1E724A650053F98B /* Sources */,
+				140189AC1E724A650053F98B /* Frameworks */,
+				140189AD1E724A650053F98B /* Headers */,
+				140189AE1E724A650053F98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonCrypto-macOS";
+			productName = CommonCrypto;
+			productReference = 140189B01E724A650053F98B /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -99,6 +209,21 @@
 				ORGANIZATIONNAME = sonson;
 				TargetAttributes = {
 					140189611E7240320053F98B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JP866VWWSD;
+						ProvisioningStyle = Automatic;
+					};
+					140189951E72495F0053F98B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JP866VWWSD;
+						ProvisioningStyle = Automatic;
+					};
+					140189A21E7249920053F98B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = JP866VWWSD;
+						ProvisioningStyle = Automatic;
+					};
+					140189AF1E724A650053F98B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = JP866VWWSD;
 						ProvisioningStyle = Automatic;
@@ -117,7 +242,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				140189611E7240320053F98B /* CommonCrypto */,
+				140189611E7240320053F98B /* CommonCrypto-iOS */,
+				140189951E72495F0053F98B /* CommonCrypto-watchOS */,
+				140189A21E7249920053F98B /* CommonCrypto-tvOS */,
+				140189AF1E724A650053F98B /* CommonCrypto-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -131,10 +259,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		140189941E72495F0053F98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189A11E7249920053F98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189AE1E724A650053F98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1401895D1E7240320053F98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189911E72495F0053F98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1401899E1E7249920053F98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		140189AB1E724A650053F98B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,7 +427,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CommonCrypto;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -277,7 +447,147 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = CommonCrypto;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1401899C1E72495F0053F98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1401896D1E7240650053F98B /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		1401899D1E72495F0053F98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1401896D1E7240650053F98B /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		140189A91E7249920053F98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1401896D1E7240650053F98B /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		140189AA1E7249920053F98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1401896D1E7240650053F98B /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
+		140189B61E724A650053F98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		140189B71E724A650053F98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JP866VWWSD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sonson.CommonCrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -295,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1401896A1E7240320053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
+		1401896A1E7240320053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1401896B1E7240320053F98B /* Debug */,
@@ -303,6 +613,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1401899B1E72495F0053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1401899C1E72495F0053F98B /* Debug */,
+				1401899D1E72495F0053F98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		140189A81E7249920053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140189A91E7249920053F98B /* Debug */,
+				140189AA1E7249920053F98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		140189B51E724A650053F98B /* Build configuration list for PBXNativeTarget "CommonCrypto-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				140189B61E724A650053F98B /* Debug */,
+				140189B71E724A650053F98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
